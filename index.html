@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">    
+  <link rel="stylesheet" href="style.css">  
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container_header">
+            <div class="logo_block">
+                <img src="/images/logo.svg" class="logo_img" alt="logo">
+            </div>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="/" class="nav_link">Collections</a></li>
+                    <li class="nav_item"><a href="/" class="nav_link">Men</a></li>
+                    <li class="nav_item"><a href="/" class="nav_link">Women</a></li>
+                    <li class="nav_item"><a href="/" class="nav_link">About</a></li>
+                    <li class="nav_item"><a href="/" class="nav_link">Contact</a></li>
+                </ul>
+            </nav>
+        
+            <div class="img_block">
+                <img src="/images/cart.svg" alt="cart" class="img_cart" id="cart_icon">
+                <p class="cart_num" id="cart_num">0</p>
+                <img src="/images/image-avatar.png" alt="avatar" class="img_avatar">
+            </div>
+        
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="wrapper-img_block">
+                <div class="main-img_block">
+                    <img src="/images/image-product-1.jpg" alt="" class="main_img" id="main_img">
+                </div>
+                <div class="secondary-img_block">
+                    <img class="secondary_img selected_img" src="/images/image-product-1.jpg" alt="">
+                    <img class="secondary_img" src="/images/image-product-2.jpg" alt="">
+                    <img class="secondary_img" src="/images/image-product-3.jpg" alt="">
+                    <img class="secondary_img" src="/images/image-product-4.jpg" alt="">
+                </div>
+            </div>
+        
+            <div class="wrapper-info">
+                <h2 class="info_title">sneaker company</h2>
+                <p class="info_text">Fall Limited Edition Sneakers</p>
+                <p class="info-secondary_text">
+                    These low-profile sneakers are your perfect casual wear
+                    companion. Featuring a durable rubber outer sale, they'll 
+                    withstand everything the weather can offer.
+                </p>
+
+                <div class="price_info">
+                    <p class="main_price">$125.00</p>
+                    <p class="price_discount">50%</p>
+                    <p class="old-price_discount">$250.00</p>
+                </div>
+
+
+                <div class="buttons_block">
+                    <div class="counter_block">
+                        <button class="counter_minus" id="minus">–</button>
+                        <p class="counter_number" id="number">0</p>
+                        <button class="counter_plus" id="plus">+</button>
+                    </div>
+
+                    <button class="add-to_cart">
+                        <img class="cart-btn_img" src="/images/icon-cart.svg" alt="">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

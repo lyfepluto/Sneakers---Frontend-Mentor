@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.header {
+    margin: 0 auto;
+    display: flex;
+    height: 20vh;
+    align-items: center;
+
+}
+
+
+.container {
+    display: flex;
+    width: 1140px;
+    margin: auto;
+    position: relative;
+}
+
+
+.container_header {
+    display: flex;
+    width: 1140px;
+    margin: auto;
+    position: relative;
+}
+
+.container_header::after {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #ccc; /* Цвет линии */
+}
+
+.logo_block {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    margin-left:90px ;
+
+}
+
+.nav_list {
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+}
+
+.nav_item {
+    font-size: 16px;
+    list-style: none;
+}
+
+.nav_link{
+    text-decoration: none;
+    color: rgb(105, 105, 105);
+}
+
+.nav_link:hover {
+    color: rgb(153, 153, 153);
+}
+
+.img_block{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.img_cart {
+    position: relative;
+    padding-right: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.cart_num {
+    position: absolute;
+    top: 0;
+    right: 54px;
+    background-color:rgb(247, 126, 27);
+    border-radius: 50% ;
+    color: white;
+    font-weight: 700;
+    align-items: center;
+    font-size: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.img_avatar {
+    height: 50px;
+}
+
+.wrapper {
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 200px;
+}
+
+.wrapper-img_block{
+    width: 450px;
+}
+
+.main_img {
+    width: 450px;
+    border-radius: 20px;
+}
+
+.secondary-img_block {
+    margin-top: 20px;
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondary_img {
+    display: inline-block;
+    width: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.selected_img {
+    opacity: 0.5;
+    border: 3px solid rgb(247, 126, 27);
+}
+
+
+.wrapper-info {
+    margin: 0;
+    padding-top: 40px;
+    padding-left: 120px;
+}
+
+.info_title{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: hsl(26, 100%, 55%);
+}
+
+.info_text {
+    padding-top: 20px;
+    width: 600px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.info-secondary_text {
+    color: rgb(140, 140, 140);
+    margin-top: 40px;
+}
+
+.price_info {
+    width: 200px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main_price {
+    font-weight: 700;
+    font-size: 32px;
+    padding-right: 20px;
+}
+
+.price_discount {
+    font-weight: 700;
+    font-size: 16px;
+    background-color: hsl(25, 100%, 94%);
+    padding: 5px 12px;
+    border-radius: 8px;
+    color: hsl(26, 100%, 55%);
+}
+
+.old-price_discount {
+    font-weight: 500;
+    padding-top: 10px;
+    text-decoration: line-through;
+    color: rgb(153, 153, 153);
+}
+
+.buttons_block {
+    display: flex; 
+    align-items: center; 
+    margin-top: 40px;   
+}
+
+.counter_block {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 8px;
+    justify-content: space-between;
+}
+
+.counter_plus, .counter_minus {
+    background-color: rgb(247, 247, 247);
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    font-size: 30px;
+    border: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+.counter_minus {
+    padding-left: 14px;
+}
+
+.counter_plus {
+    padding-right: 14px;
+}
+
+.counter_number {
+    font-weight: 700;
+}
+
+.add-to_cart {
+    display: flex;
+    align-items: center;
+    height: 60px;   
+    font-weight: 700;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 60px;
+    padding-left: 80px;
+    padding-right: 80px;
+    box-shadow: 0 14px 25px hsl(26, 100%, 55%);
+}
+
+.cart-btn_img {
+    padding-right: 10px;
+}
